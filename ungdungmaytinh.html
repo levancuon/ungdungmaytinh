@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <h1>Caculator</h1>
+</head>
+<body>
+<input type="text" id="1">
+<input type="text" id="2"><br>
+<button type="submit" id="cong" onclick="ad();">addition(+)</button>
+<button type="submit" id="tru" onclick="sp();">Subtraction(-)</button>
+<button type="submit" id="nhan" onclick="vl();">Multiplication(x)</button>
+<button type="submit" id="chia" onclick="chia();">Division(/)</button>
+<br>
+
+<script>
+    function ad(){
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('2').value;
+        let c = a+b;
+        document.getElementById('4').innerHTML="kết quả =" +c ;
+    }
+    function sp(){
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('2').value;
+        let c = a-b;
+        document.getElementById('4').innerHTML="kết quả =" +c ;
+    }
+    function vl(){
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('2').value;
+        let c = a*b;
+        document.getElementById('4').innerHTML="kết quả =" +c ;
+    }
+    function chia(){
+        let a = +document.getElementById('1').value;
+        let b = +document.getElementById('2').value;
+        let c = a/b;
+        document.getElementById('4').innerHTML="kết quả =" +c ;
+    }
+
+
+</script>
+<p id="4"></p>
+</body>
+</html>
